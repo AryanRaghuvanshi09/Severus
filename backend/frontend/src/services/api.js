@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://projectbook.onrender.com/api' });
+const API = axios.create({ baseURL: 'https://severus-bmx1.onrender.com/api' });
 
 // Interceptor to attach the token to requests if logged in
 API.interceptors.request.use((req) => {
