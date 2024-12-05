@@ -17,7 +17,7 @@ app.use(express.json());
 // Configure CORS
 app.use(
   cors({
-    origin: 'https://projectbook.onrender.com', // Allow requests from your frontend
+    origin: 'https://severus-bmx1.onrender.com', // Allow requests from your frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
     credentials: true, // Include credentials like cookies
