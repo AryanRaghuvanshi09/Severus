@@ -1,0 +1,126 @@
+/* AddProduct.css */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add-product-container {
+  max-width: 600px; /* Adjusting width for better responsiveness */
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.add-product-container h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form input[type="file"] {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1em;
+  color: #2c3e50;
+  background-color: #f0f2f5;
+  border: 1px solid #dcdfe3;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.add-product-form input[type="text"]:focus,
+.add-product-form input[type="number"]:focus,
+.add-product-form input[type="file"]:focus {
+  border-color: #3498db;
+}
+
+.add-product-form button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-product-form button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.add-product-form button:active {
+  transform: translateY(0);
+}
+
+/* Section for Bulk Upload */
+.bulk-upload-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.bulk-upload-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.bulk-upload-section input[type="file"] {
+  padding: 10px;
+  font-size: 1em;
+  color: #2c3e50;
+  background-color: #f0f2f5;
+  border: 1px solid #dcdfe3;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.bulk-upload-section button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bulk-upload-section button:hover {
+  background-color: #d35400;
+  transform: translateY(-2px);
+}
+
+.bulk-upload-section button:active {
+  transform: translateY(0);
+}
+
+/* Feedback Message */
+.bulk-upload-section p {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #27ae60; /* Success color */
+}
+
+/* Error messages */
+.bulk-upload-section .error {
+  color: #e74c3c; /* Error color */
+}

@@ -1,0 +1,203 @@
+/* Main container */
+.sales-dashboard-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: flex-start;
+}
+
+/* Header */
+.sales-dashboard-container h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Buttons for selecting form */
+.sales-dashboard-container .form-toggle-buttons {
+  margin-bottom: 30px;
+}
+
+/* Button styles */
+.sales-dashboard-container .form-toggle-buttons button {
+  font-size: 1.1em;
+  padding: 10px 20px;
+  margin: 0 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sales-dashboard-container .form-toggle-buttons button:hover {
+  background-color: #2980b9;
+}
+
+/* Conditionally rendered form */
+.sales-dashboard-container .form-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limit the max width */
+  width: 100%; /* Ensure full width within container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Optional: Style for the form title */
+.sales-dashboard-container .form-container h2 {
+  font-size: 2em;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+/* Optional: Form input styles */
+.sales-dashboard-container .form-container input,
+.sales-dashboard-container .form-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.sales-dashboard-container .form-container input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Submit button */
+.sales-dashboard-container .form-container button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2em;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sales-dashboard-container .form-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sales-dashboard-container h1 {
+    font-size: 2em; /* Smaller header font */
+    margin-bottom: 20px;
+  }
+
+  .sales-dashboard-container .form-toggle-buttons {
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  .sales-dashboard-container .form-toggle-buttons button {
+    font-size: 1em; /* Smaller button font size */
+    padding: 8px 16px; /* Smaller button padding */
+    margin: 0 10px; /* Reduced margin */
+  }
+
+  .sales-dashboard-container .form-container {
+    padding: 15px; /* Reduced padding for smaller screens */
+    max-width: 500px; /* Reduced max-width */
+  }
+
+  .sales-dashboard-container .form-container h2 {
+    font-size: 1.6em; /* Smaller form title */
+    margin-bottom: 15px;
+  }
+
+  .sales-dashboard-container .form-container input,
+  .sales-dashboard-container .form-container select {
+    font-size: 1em; /* Reduced font size for inputs */
+    padding: 10px; /* Reduced input padding */
+  }
+
+  .sales-dashboard-container .form-container button {
+    font-size: 1em; /* Reduced button font size */
+    padding: 10px; /* Reduced padding */
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .sales-dashboard-container h1 {
+    font-size: 1.6em; /* Even smaller header font */
+    margin-bottom: 15px;
+  }
+
+  .sales-dashboard-container .form-container {
+    padding: 12px; /* Further reduced padding */
+    max-width: 400px; /* Further reduced max-width */
+  }
+
+  .sales-dashboard-container .form-container h2 {
+    font-size: 1.4em; /* Smaller form title */
+    margin-bottom: 12px;
+  }
+
+  .sales-dashboard-container .form-container input,
+  .sales-dashboard-container .form-container select {
+    font-size: 0.95em; /* Smaller font size for inputs */
+    padding: 8px; /* Further reduced input padding */
+  }
+
+  .sales-dashboard-container .form-container button {
+    font-size: 0.95em; /* Smaller button font size */
+    padding: 10px; /* Further reduced button padding */
+  }
+
+  .sales-dashboard-container .form-toggle-buttons button {
+    font-size: 0.95em; /* Smaller button font size */
+    padding: 8px 14px; /* Smaller padding */
+    margin: 0 8px; /* Reduced margin */
+  }
+}
+
+/* For very small screens like iPhone 5 (320px width) */
+@media (max-width: 320px) {
+  .sales-dashboard-container h1 {
+    font-size: 1.4em; /* Smallest header font */
+    margin-bottom: 10px;
+  }
+
+  .sales-dashboard-container .form-container {
+    padding: 10px; /* Further reduced padding */
+    max-width: 300px; /* Further reduced max-width */
+  }
+
+  .sales-dashboard-container .form-container h2 {
+    font-size: 1.2em; /* Smaller form title */
+    margin-bottom: 10px;
+  }
+
+  .sales-dashboard-container .form-container input,
+  .sales-dashboard-container .form-container select {
+    font-size: 0.9em; /* Smaller font size for inputs */
+    padding: 6px; /* Minimized input padding */
+  }
+
+  .sales-dashboard-container .form-container button {
+    font-size: 0.9em; /* Smallest button font size */
+    padding: 8px; /* Minimized padding */
+  }
+
+  .sales-dashboard-container .form-toggle-buttons button {
+    font-size: 0.9em; /* Smaller button font size */
+    padding: 6px 12px; /* Minimized padding */
+    margin: 0 6px; /* Reduced margin */
+  }
+}

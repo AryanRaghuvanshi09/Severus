@@ -1,0 +1,239 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.book-sets-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafc;
+  padding: 10px 8px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Header */
+.book-sets-container h2 {
+  font-size: 2.5vw; /* Responsive font size */
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 8px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 90%;
+  max-width: 750px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #e1e5eb;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+/* Grid for Book Sets */
+.book-set-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  max-height: 80vh; /* Limit the height of the book set grid */
+  box-sizing: border-box;
+}
+
+/* Book Set Card */
+.book-set-card {
+  background-color: #ffffff;
+  border: 1px solid #e3e6ea;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.book-set-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Set Info */
+.set-info h3 {
+  font-size: 1.2em;
+  color: #3498db;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.set-info h3:hover {
+  color: #2980b9;
+}
+
+.set-info p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 4px 0;
+}
+
+.set-info strong {
+  color: #333;
+}
+
+/* Books & Copies Details */
+.details {
+  margin-top: 15px;
+}
+
+.books-details h4, .copies-details h4 {
+  font-size: 1em;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-weight: 600;
+  border-bottom: 2px solid #e1e5eb;
+  padding-bottom: 6px;
+}
+
+.books-list, .copies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-item, .copy-item {
+  background-color: #f5f7fa;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.9em;
+  color: #666;
+  border-left: 3px solid #3498db;
+}
+
+.book-item p, .copy-item p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.book-item strong, .copy-item strong {
+  color: #333;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .book-sets-container h2 {
+    font-size: 1.6em;
+  }
+
+  .book-set-card {
+    padding: 12px;
+  }
+
+  .search-input {
+    font-size: 0.9em;
+  }
+
+  .book-set-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .set-info h3 {
+    font-size: 1.1em;
+  }
+
+  .details h4 {
+    font-size: 0.9em;
+  }
+
+  .book-item, .copy-item {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+}
+
+/* For Galaxy S22 Plus (384px width), iPhone 14 (390px width) and smaller devices */
+@media (max-width: 400px) {
+  .book-sets-container h2 {
+    font-size: 1.4em;
+    margin-bottom: 12px;
+  }
+
+  .search-input {
+    font-size: 0.85em;
+  }
+
+  .book-set-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .book-set-card {
+    padding: 10px;
+  }
+
+  .set-info h3 {
+    font-size: 1em;
+  }
+
+  .details h4 {
+    font-size: 0.85em;
+  }
+
+  .book-item, .copy-item {
+    font-size: 0.75em;
+    padding: 5px;
+  }
+}
+
+/* For smaller devices like iPhone 5 (320px and below) */
+@media (max-width: 320px) {
+  .book-sets-container h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+
+  .book-set-grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .book-set-card {
+    padding: 8px;
+  }
+
+  .set-info h3 {
+    font-size: 0.9em;
+  }
+
+  .book-item, .copy-item {
+    font-size: 0.7em;
+    padding: 4px;
+  }
+}

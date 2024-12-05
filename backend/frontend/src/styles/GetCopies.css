@@ -1,0 +1,55 @@
+/* Main container */
+.get-copies-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 30px;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .get-copies-container h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  th {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* No copies available message */
+  table td[colspan="3"] {
+    text-align: center;
+    color: #999;
+    font-size: 1.1em;
+    padding: 20px;
+  }
+  

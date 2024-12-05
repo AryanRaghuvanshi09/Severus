@@ -1,0 +1,93 @@
+/* Homepage Styling */
+.homepage {
+  font-family: Arial, sans-serif;
+  max-width: 100%; /* Ensure container fits within screen */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box; /* Ensure padding is included in width/height calculations */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center; /* Center navbar content */
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 1.5em; /* Ensure readable size */
+  line-height: 1.2; /* Add some spacing for readability */
+}
+
+/* Main Content Section */
+.main-content {
+  text-align: center;
+  margin-top: 50px;
+  padding: 0 15px; /* Add padding for smaller screens */
+}
+
+/* Role Button Styling */
+.role-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 1em; /* Adjust for better readability */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Role Button Hover Effect */
+.role-button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-title {
+    font-size: 1.2em; /* Smaller title for narrower screens */
+  }
+
+  .main-content {
+    margin-top: 30px; /* Reduce top margin for smaller screens */
+    padding: 0 10px; /* Reduce side padding for smaller screens */
+  }
+
+  .role-button {
+    padding: 8px 16px; /* Smaller button size for smaller screens */
+    font-size: 0.9em; /* Slightly smaller font size for buttons */
+    margin: 8px; /* Adjust button margin */
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-title {
+    font-size: 1em; /* Further reduce navbar title size for very small screens */
+  }
+
+  .role-button {
+    width: 100%; /* Full-width buttons for small screens */
+    padding: 10px; /* Ensure adequate padding */
+    font-size: 0.85em; /* Slightly smaller font */
+    box-sizing: border-box; /* Prevent width overflow */
+  }
+
+  .main-content {
+    margin-top: 20px; /* Further reduce top margin */
+    padding: 0 8px; /* Minimal padding on the sides */
+  }
+}
+
+/* Ensure consistency across all screen sizes */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Apply box-sizing to all elements */
+}

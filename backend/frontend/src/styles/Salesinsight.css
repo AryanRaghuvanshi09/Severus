@@ -1,0 +1,215 @@
+/* Overall Page Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f6f8;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Typography Styling */
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.total-revenue {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4caf50;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #e8f5e9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Chart Card Styling */
+.chart-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+}
+
+.chart-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Chart container */
+.chart {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Grid Layout for Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+  gap: 20px;
+  width: 100%;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    gap: 15px;
+  }
+}
+
+/* Styling for Product and Bookset Sales Cards */
+.sales-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 100%;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+.sales-card h6 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sales-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sales-card li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+/* Error and Loading Spinner */
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Ensure the page scales correctly on different devices */
+@media (max-width: 1200px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .total-revenue {
+    font-size: 1.5rem;
+  }
+
+  .chart-card {
+    padding: 15px;
+  }
+}
+
+/* Prevent page overflow and make sure the page can zoom properly */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Manage overflow for product and book set details */
+.paper-container {
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto; /* Make product/book set details scrollable */
+  width: 100%;
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .chart-card {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+
+  .chart {
+    height: 300px; /* Reduce chart height on smaller screens */
+  }
+
+  .sales-card ul li {
+    font-size: 0.8rem; /* Adjust text size on mobile */
+  }
+
+  .total-revenue {
+    font-size: 1.4rem; /* Smaller font for mobile */
+    padding: 8px;
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .dashboard-title {
+    font-size: 1.6rem; /* Smaller title */
+  }
+
+  .total-revenue {
+    font-size: 1.2rem; /* Further reduce font size */
+  }
+
+  .chart-card {
+    padding: 8px; /* Even smaller padding */
+  }
+
+  .chart {
+    height: 250px; /* Further reduce chart height */
+  }
+
+  .sales-card h6 {
+    font-size: 1rem; /* Smaller card heading */
+  }
+
+  .sales-card ul li {
+    font-size: 0.75rem; /* Further reduce font size */
+  }
+}

@@ -1,0 +1,58 @@
+/* AdminDashboard.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin-dashboard {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.admin-dashboard h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard p {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-dashboard .link-button {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: #3498db;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-dashboard .link-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+.admin-dashboard .link-button:active {
+    transform: translateY(0);
+}
